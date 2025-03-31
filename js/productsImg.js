@@ -1,0 +1,41 @@
+const PRODUCT01 = [
+    './01.WestFleece_detail/product01/product01-1.jpg',
+    './01.WestFleece_detail/product01/product01-2.jpg',
+    './01.WestFleece_detail/product01/product01-3.jpg',
+    './01.WestFleece_detail/product01/product01-4.jpg',
+    './01.WestFleece_detail/product01/product01-5.jpg',
+    './01.WestFleece_detail/product01/product01-6.jpg',
+    './01.WestFleece_detail/product01/product01-7.jpg',
+    './01.WestFleece_detail/product01/product01-8.jpg',
+    './01.WestFleece_detail/product01/product01-9.jpg',
+    './01.WestFleece_detail/product01/product01-10.jpg',
+    './01.WestFleece_detail/product01/product01-11.jpg',
+    './01.WestFleece_detail/product01/product01-12.jpg',
+    './01.WestFleece_detail/product01/product01-13.jpg',
+    './01.WestFleece_detail/product01/product01-14.jpg',
+    './01.WestFleece_detail/product01/product01-15.jpg',
+    './01.WestFleece_detail/product01/product01-16.jpg',
+    './01.WestFleece_detail/product01/product01-17.jpg',
+    './01.WestFleece_detail/product01/product01-18.jpg',
+    './01.WestFleece_detail/product01/product01-19.jpg',
+    './01.WestFleece_detail/product01/product01-20.jpg'
+]
+const PRODUCT02 = [
+    './01.WestFleece_detail/product01/product02-1.jpg',
+    './01.WestFleece_detail/product01/product02-2.jpg',
+    './01.WestFleece_detail/product01/product02-3.jpg',
+    './01.WestFleece_detail/product01/product02-4.jpg',
+    './01.WestFleece_detail/product01/product02-5.jpg',
+    './01.WestFleece_detail/product01/product02-6.jpg',
+    './01.WestFleece_detail/product01/product02-7.jpg',
+    './01.WestFleece_detail/product01/product02-8.jpg',
+    './01.WestFleece_detail/product01/product02-9.jpg',
+    './01.WestFleece_detail/product01/product02-10.jpg',
+    './01.WestFleece_detail/product01/product02-11.jpg',
+    './01.WestFleece_detail/product01/product02-12.jpg',
+    './01.WestFleece_detail/product01/product02-13.jpg',
+    './01.WestFleece_detail/product01/product02-14.jpg',
+    './01.WestFleece_detail/product01/product02-15.jpg',
+    './01.WestFleece_detail/product01/product02-16.jpg'
+]
+

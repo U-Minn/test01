@@ -1,0 +1,105 @@
+.category_title {
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+.main { margin-top: 80px;}
+.list_ul {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+.item_li {
+    width: calc((100% - (25px * 3)) / 4);
+    margin-bottom: 80px;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+
+    transform: translateY(100px);
+    opacity: 0.1;
+}
+.thumnail img { width: 100%; }
+.thumnail {
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.show {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.titlebox {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px 0;
+    font-weight: 700;
+}
+.item_title {
+    width: 70%;
+    font-size: 20px;
+}
+.item_price {
+    padding: 7px 0 2px 0;
+    font-size: 18px;
+}
+
+.sec2 {
+    padding: 0;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    gap: 7px;
+}
+.sec2 a:nth-child(2) { border-bottom: 1px solid transparent;}
+.sec2 a:nth-child(2):hover { border-bottom: 1px solid #000;}
+
+@media screen and (max-width: 980px) {
+    .list_ul {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .item_li {
+        width: calc((100% - 25px) / 2);
+        margin-bottom: 80px;
+        transition: transform 1s ease-out, opacity 1s ease-out;
+    
+        transform: translateY(100px);
+        opacity: 0.1;
+    }
+    .thumnail img { width: 100%; }
+    .thumnail {
+        padding: 10px 0;
+        box-sizing: border-box;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .list_ul {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .item_li {
+        width: 100%;
+        margin-bottom: 80px;
+        transition: transform 1s ease-out, opacity 1s ease-out;
+    
+        transform: translateY(100px);
+        opacity: 0.1;
+    }
+    .thumnail img { width: 100%; }
+    .thumnail {
+        padding: 10px 0;
+        box-sizing: border-box;
+    }
+}

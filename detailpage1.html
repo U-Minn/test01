@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/detailpage.css">
+    <link rel="stylesheet" href="./css/commoncss.css">
+    <link rel="shortcut icon" href="./00main/faviconlogo.jpg" type="image/x-icon">
+    <script src="./js/productsImg.js"></script>
+    <script src="./js/itemListData.js"></script>
+    <script src="./js/get_url_info.js"></script>
+</head>
+    <body>
+<!-- 탑배너 -->
+    <div class="top_banner swiper mySwiper" id="top_banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Modest Mood 25 Spring Collection 3.18(Tue) 12pm Open</div>
+            <div class="swiper-slide">Contact the site : modestmood2016@gmail.com</div>
+        </div>
+        <input type="button" value="X" id="close_btn" class="close_btn">
+    </div>
+    <div id="wrap">
+        <header class="header contain" id="header">
+            <!-- 상단헤더 -->
+            <!-- 모바일헤더 시작 -->
+            <div class="menu_pan">
+                <div class="menu_header"> 
+                    <ul class="header_ul">
+                        <li class="header_li"><a href="#"><img src="./00main/account.png" alt=""></a></li>
+                        <li class="header_li">
+                                <img src="./00main/globe.png" alt="" class="global_btn">
+                                    <div class="menu_box">
+                                        <ul class="m_menu_inner_ul">
+                                            <li class="lang" onclick="plus(this)">
+                                                <div class="dot black"></div>
+                                                <!-- Kor -->
+                                                <a href="#">Kor</a>
+                                            </li>
+                                            <li class="lang" onclick="plus(this)">
+                                                <div class="dot"></div>
+                                                <!-- Eng -->
+                                                <a href="#">Eng</a>
+                                            </li>
+                                            <li class="lang" onclick="plus(this)">
+                                                <div class="dot"></div>
+                                                <!-- Jpn -->
+                                                <a href="#">Jpn</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                        </li>
+                        <li class="header_li"><a href="#"><img src="./00main/heart.png" alt="" style="width: 25px;"></a></li>
+                    </ul>
+                </div>
+                <div class="pan_line"></div>
+                <div class="menu_body">
+                <ul class="ul_top">
+                    <li><a href="#">New Arrivals</a></li>
+                </ul>
+                <ul class="mobile_inner_ul">
+                    <li><a href="./listpage.html?category=0">West fleece</a></li>
+                    <li><a href="./listpage.html?category=1">Outer</a></li>
+                    <li><a href="./listpage.html?category=2">Top</a></li>
+                    <li><a href="./listpage.html?category=3">Knitwear</a></li>
+                    <li><a href="./listpage.html?category=4">Denim</a></li>
+                    <li><a href="./listpage.html?category=5">Bottom</a></li>
+                    <li><a href="./listpage.html?category=6">Dress</a></li>
+                    <li><a href="./listpage.html?category=7">Bag</a></li>
+                    <li><a href="./listpage.html?category=8">Shoes</a></li>
+                    <li><a href="./listpage.html?category=9">Things</a></li>
+                    <li class="inner_li"><a href="#">Personal</a></li>
+                </ul>
+                <ul class="ul_bot">
+                    <li><a href="#">Collection</a></li>
+                    <li><a href="#">Journal</a></li>
+                    <li><a href="#">Notice</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="layer"></div>
+        <!-- 모바일헤더끝 -->
+            <div class="header_top contentbox">
+                <div class="mobie_menu">
+                    <img src="./00main/mobile_menu.png" alt="메뉴버튼" class="mobile_menu_btn">
+                </div>
+                <div class="left_box">
+                    <ul class="t_menu">
+                        <li class="t_menu_li">
+                                <img src="./00main/account.png" alt="account">
+                                <div class="menu_box">
+                                    <ul class="t_menu_inner_ul">
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Register</a></li>
+                                        <li><a href="#">My Page</a></li>
+                                        <li class="notice"><a href="#">Notice</a></li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <li class="t_menu_li"><a href="#">New</a></li>
+                        <li class="t_menu_li">
+                                Shop
+                                <div class="menu_box">
+                                    <ul class="t_menu_inner_ul">
+                                        <li><a href="./listpage.html?category=0">West fleece</a></li>
+                                        <li><a href="./listpage.html?category=1">Outer</a></li>
+                                        <li><a href="./listpage.html?category=2">Top</a></li>
+                                        <li><a href="./listpage.html?category=3">Knitwear</a></li>
+                                        <li><a href="./listpage.html?category=4">Denim</a></li>
+                                        <li><a href="./listpage.html?category=5">Bottom</a></li>
+                                        <li><a href="./listpage.html?category=6">Dress</a></li>
+                                        <li><a href="./listpage.html?category=7">Bag</a></li>
+                                        <li><a href="./listpage.html?category=8">Shoes</a></li>
+                                        <li><a href="./listpage.html?category=9">Things</a></li>
+                                        <li class="inner_li"><a href="#">Personal</a></li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <li class="t_menu_li">
+                                Global
+                                <div class="menu_box">
+                                    <ul class="t_menu_inner_ul">
+                                        <li class="lang" onclick="plus(this)">
+                                            <div class="dot black"></div>
+                                            <!-- Kor -->
+                                            <a href="#">Kor</a>
+                                        </li>
+                                        <li class="lang" onclick="plus(this)">
+                                            <div class="dot"></div>
+                                            <!-- Eng -->
+                                            <a href="#">Eng</a>
+                                        </li>
+                                        <li class="lang" onclick="plus(this)">
+                                            <div class="dot"></div>
+                                            <!-- Jpn -->
+                                            <a href="#">Jpn</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <li class="t_menu_li">
+                            <a href="#">Collection</a>
+                        </li>
+                        <li class="t_menu_li">
+                                Journal
+                                <div class="menu_box">
+                                    <ul class="t_menu_inner_ul">
+                                        <li><a href="#">Modestmood</a></li>
+                                        <li><a href="#">Shop modestmood</a></li>
+                                    </ul>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="logo_box">
+                    <a href="./index.html">
+                        <img src="./00main/logo.png" alt="로고">
+                    </a>
+                </div>
+                <div class="search_box">
+                    <ul class="search_menu">
+                        <li>
+                            <img src="./00main/search.png" alt="search" id="search_icon">
+                        </li>
+                        <li>
+                            <img src="./00main/cart.png" alt="">
+                            <span class="cart_num">0</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 돋보기 누르면 나타나는 서치박스 -->
+            <div class="header_bot">
+                <div class="search">
+                    <input type="text" placeholder="search" class="keyword">
+                    <div class="icon_box">
+                        <img src="./00main/magni.png" alt="search_icon">
+                    </div>
+                </div>
+                <div class="close_btn2" id="close_btn2">
+                    <img src="./00main/icon-close원본.svg" alt="closebtn" style="width: 25px;" >
+                </div>
+            </div>
+        </header> 
+        <!-- 메인 -->
+        <main class="main contain">
+            <div class="contentbox">
+                <div class="detail_wrap">
+                    <section class="sec1">
+                        <!-- 여긴 이미지들 들어갈 영역 -->
+                        <ul class="img_list">
+                            <!-- <li class="detail_img">
+                                <img src="./01.WestFleece_detail/product01/product01-01.jpg" alt="">
+                            </li>
+                            <li class="detail_img">
+                                <img src="./01.WestFleece_detail/product01/product01-02.jpg" alt="">
+                            </li> -->
+                            <!-- 여기 안에 li요소로 이미지.. 데이터파일 만들어서 삽입? -->
+                        </ul>
+                    </section>
+                    <section class="sec2">
+                        <!-- 여긴 아이템 설명들어갈 영역 -->
+                        <div class="detail_title">
+                            <span>3rd. West Fleece (pink)</span>
+                        </div>
+                        <div class="detail_price">
+                            <strong>KRW 129,000</strong>
+                        </div>
+                        <div class="heart">
+                            <img src="./01.WestFleece_detail/heart.png" alt="관심버튼" style="width: 25px;">
+                        </div>
+                        <div class="numbox">
+                            <img src="./01.WestFleece_detail/ico_quantity_down.png" alt="quantitydown." style="width: 11px;" onclick="qtyminus()">
+                            <input type="text" value="1" id="item_qty">
+                            <img src="./01.WestFleece_detail/ico_quantity_up.png" alt="quantity_up." style="width: 11px;" onclick="qtyplus()">
+                        </div>
+                        <div class="cart_btn">
+                            <div class="cart_desc center">ADD TO CART</div>
+                            <div class="cart_img center">
+                                <img src="./00main/cart.png" alt="cartimg">
+                            </div>
+                        </div>
+                        <!-- 여기 까지 카트 -->
+                        <div class="tap_btn">
+                            <div class="tapbtn tap_btn1 tapbtn_show ">Detail</div>
+                            <div class="tapbtn tap_btn2">Size</div>
+                            <div class="tapbtn tap_btn3">Care</div>
+                            <div class="tapbtn tap_btn4">Shipping & Returns
+                                <!-- <img src="./01.WestFleece_detail/pop-arrow2.svg" alt="arrow" class="arr_svg" > -->
+                                <svg class="arr_svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 4.7 4.5" style="enable-background:new 0 0 4.7 4.5;" xml:space="preserve">
+                                    <style type="text/css">
+                                        .st0{fill:none;stroke-width:0.5;stroke-miterlimit:10; }
+                                    </style>
+                                    <g>
+                                        <polyline class="st0" points="1.5,0.8 3.8,0.8 3.8,3.1 	"/>
+                                        <line class="st0" x1="0.7" y1="3.9" x2="3.8" y2="0.8"/>
+                                    </g>
+                                </svg>
+    
+                            </div>
+                        </div>
+                        <div class="tap_pan">
+                            <div class="tap tap1 tap_show">
+                                    Activity Life MODEST MOOD<br>
+                                    모데스트무드만의 편안한 액티브웨어.  <br>
+                                    <br>
+                                    2021년 출시 이후 꾸준한 사랑을 받아온 스테디셀러.특유의 조직감이 <br>
+                                    돋보이는 폭신한 플리스 원단을 사용하여 스포티한 스타일을 넘어 <br>
+                                    모데스트무드만의 감각적인 해석을 더했습니다.  <br>
+                                    <br>
+                                    일상 속에서도 자연스럽게 스며드는 웨어러블한 디자인으로,<br>
+                                    언제 어디서나 편안하게 착용할 수 있습니다.  <br>
+                                    <br>
+                                    크리미한 핑크 컬러의 우먼과 맨즈 두 가지 사이즈로 고급 플리스 <br>
+                                    원단만을 전문적으로 다루는 곳에서 엄선하여 국내 제작되었습니다. <br>
+                                    <br>
+                                    넥라인 보강 처리를 통해 더욱 탄탄한 형태감을 유지하며, <br>
+                                    가벼운 착용감과 함께 뛰어난 보온성을 제공합니다.  <br>
+                                    <br>
+                                    양털과 유사한 부드러운 터치감이 특징인 플리스 소재는 기모층을 <br>
+                                    통해 높은 보온력을 유지하며, 프리사이즈로 제작되어 <br>
+                                    다양한 체형에 구애받지 않고 착용할 수 있습니다.  <br>
+                                    여유로운 실루엣으로 어디에나 매치하기 쉬우며, <br>
+                                    패딩이나 코트 속 이너웨어로 활용하거나 실내에서는 단독으로도 부담 없이 착용할 수 있습니다.  <br>
+                                    <br>
+                                    · Polyester 100%  <br>
+                                    · Cotton 라이닝 마감<br>
+                                    · 앞 포켓 디테일<br>
+                                    · 시그니처 라벨  <br>
+                                    · 앤틱 실버 스냅 버튼  <br>
+                                    · 밴딩 소매<br>
+                                    <br>
+                                    *스냅 버튼 사용 시 주의 사항<br>
+                                    강한 힘으로 당길 경우 손상이 발생할 수 있으니, 양손으로 버튼을 잡고 여닫아 주세요.  <br>
+                                    <br>
+                                    *플리스 특성상 제품의 양쪽 봉제 라인이 약간씩 다를 수 있으며, 이는 정상적인 현상입니다.  <br>
+                                    <br>
+                                    *제작 과정에서 일부 컬러 열펜 자국이 발생할 수 있습니다. 가정용 스팀을 살짝 가해주시면 자연스럽게 제거됩니다.  <br>
+                                    <br>
+                                    *제 30-2024-1287268호<br>
+                                    모데스트무드의 West Fleece 라인은 '디자인보호법'에 따라 디자인을 보호 받고 있습니다.
+                            </div>
+                            <div class="tap tap2">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Size</td>
+                                            <td>Ragian</td>
+                                            <td>Chest</td>
+                                            <td>Hem</td>
+                                            <td>Lenght</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Free</td>
+                                            <td>71</td>
+                                            <td>66</td>
+                                            <td>60</td>
+                                            <td>54</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="tap2_desc">
+                                    <p>· 사이즈 단면(cm) 기준</p>
+                                    <p>· 측정 방법에 따라 ±2-3cm의 오차 발생</p>
+                                    <p>· 모니터 환경에 따라 색상과 밝이가 다를 수 있습니다.</p>
+                                    <p>· 소재 특성상 올뭉침이나 실 섞임이 발생할 수 있습니다.</p>
+                                    <p>· 모데스트무드의 제품은 숙련된 장인의 섬세한 공정으로 정성스럽게 제작합니다.</p>
+                                </div>
+                            </div>
+                            <div class="tap tap3">Dry Clean Only</div>
+                            <div class="tap tap4">
+                                <p>모데스트무드는 로젠택배를 이용하고 있습니다.</p>
+                                <p>상세페이지 내 별도 표기없는 제품은 평균 배송일 2-3일 소요됩니다.</p>
+                                <p style="margin: 0">기본 택배비는 3,000원이며, 10만원 이상 주문 시 배송비 무료입니다. </p>
+                                <p style="margin: 0">산간지역 및 제주도는 +3,500원입니다.</p>
+                                <p>*합배송의 경우 제품당 가격이 10만원 이상일 경우에만 선발송 됩니다.</p>
+                                <p>교환 및 환불 관련 안내는 NOTICE 카테고리 확인 후 </p>
+                                <p>오른쪽 하단 1:1 문의 아이콘 클릭 후 문의바랍니다. </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="r_products">
+                    <div class="r_products_title"><h2 style="font-size: 11px;">RELATED PRODUCTS</h2></div>
+                    <div class="r_products_list">
+                        <ul class="r_item_ul">
+
+                            <!-- <li class="item_li">
+                                <a href="#">
+                                    <div class="thumnail">
+                                        <img src="./01.WestFleece/product05.jpg" alt="">
+                                    </div>
+                                </a>
+                                <div class="description">
+                                    <div class="item_title">
+                                        <a href="#">3rd. West Fleece(ethnic stripe)</a>
+                                    </div>
+                                    <div class="item_price">
+                                        KRW 129,000
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item_li">
+                                <a href="#">
+                                    <div class="thumnail">
+                                        <img src="./01.WestFleece/product02.jpg" alt="">
+                                    </div>
+                                </a>
+                                <div class="description">
+                                    <div class="item_title">
+                                        <a href="#">3rd. West Mens Fleece(pink)</a>
+                                    </div>
+                                    <div class="item_price">
+                                        KRW 142,000
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item_li">
+                                <a href="#">
+                                    <div class="thumnail">
+                                        <img src="./01.WestFleece/product07.jpg" alt="">
+                                    </div>
+                                </a>
+                                <div class="description">
+                                    <div class="item_title">
+                                        <a href="#">11th. West Fleece(lavender)</a>
+                                    </div>
+                                    <div class="item_price">
+                                        KRW 129,000
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item_li">
+                                <a href="#">
+                                    <div class="thumnail">
+                                        <img src="./01.WestFleece/product08.jpg" alt="">
+                                    </div>
+                                </a>
+                                <div class="description">
+                                    <div class="item_title">
+                                        <a href="#">9th. Mens West Fleece (lavender)</a>
+                                    </div>
+                                    <div class="item_price">
+                                        KRW 142,000
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item_li">
+                                <a href="#">
+                                    <div class="thumnail">
+                                        <img src="./01.WestFleece/product06.jpg" alt="">
+                                    </div>
+                                </a>
+                                <div class="description">
+                                    <div class="item_title">
+                                        <a href="#">2nd. Mens West Fleece(ethnic stripe)</a>
+                                    </div>
+                                    <div class="item_price">
+                                        KRW 142,000
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="item_li">
+                                <a href="#">
+                                    <div class="thumnail">
+                                        <img src="./01.WestFleece/product06.jpg" alt="">
+                                    </div>
+                                </a>
+                                <div class="description">
+                                    <div class="item_title">
+                                        <a href="#">2nd. Mens West Fleece(ethnic stripe)</a>
+                                    </div>
+                                    <div class="item_price">
+                                        KRW 142,000
+                                    </div>
+                                </div>
+                            </li> -->
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- 푸터 -->
+        <footer class="footer">
+            <div class="sns_info">
+                <a href="https://www.instagram.com/modest_mood/">Instagram</a>
+            </div>
+            <div class="shop_info">
+                <span>Company: MODEST MOOD . Ceo Cpo : HAN JU RI . Address : 036987 서울 서대문구 증가로 26-1 3층 . Tel : 070-8855-2003 . E-mail : modestmood25@gmail.com . Business license : 407-37-00245 . Online business license : 제 2018-서울마포-0333 호</span>
+                <br>
+                <ul>
+                    <li><a href="https://modestmood.com/member/agreement.html">Agreement</a></li>
+                    <li><a href="https://modestmood.com/shopinfo/guide.html">Guide</a></li>
+                    <li><a href="https://modestmood.com/member/privacy.html">Privacy</a></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- 문의버튼 -->
+        <div class="inquiry_btn" id="inquiry_btn">
+            <img src="./00main/1대1원본.png" alt="1:1문의" style="width: 65px;">
+        </div>
+        <div class="x_btn">
+            <img src="./00main/close.png" alt="" style="filter: grayscale(100%);">
+        </div>
+        <!-- 문의창 -->
+        <div class="inquiry_box" id="inquiry_box">
+
+            <div class="inner_header">
+                <div class="inner_logo">
+                    <img src="./00main/main_logo.jpg" alt="">
+                </div>
+                <div class="inner_desc">
+                    <h2>MODEST MOOD</h2>
+                    <div class="inner_desc_time">
+                        <span class="inner_desc_span">운영시간 보기</span>
+                        <div class="right_arrow">
+                            <img src="./00main/right-arrow_re.png" alt="" style="width: 10px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="inner_body">
+                <div class="inner_top">
+                    <div class="profile">
+                        <img src="./00main/main_logo.jpg" alt="" style="width: 36px;">
+                    </div>
+                    <div class="txt_box">
+                        <div class="head">
+                            MODEST MOOD
+                        </div>
+                        <div class="introduction">
+                            <p>모데스트무드는</p>
+                            <p>수수한 , 보통의 의미를 뜻합니다.</p>
+                            작고 소박한 것일지라도 사랑 할 줄 아는 우리가 되기를 바라는 마음을 담았습니다. 이 공간에서 근사한 하루를 보내시길 바라며 언제나 MODEST MOOD 를 찾아주셔서 감사합니다💙 
+                        </div>
+                    </div>
+                </div>
+                <div class="inner_bot">
+                    <div class="send_btn common_css">
+                        문의하기
+                        <img src="./00main/send_re.png" alt="">
+                    </div>
+                    <div class="time common_css">
+                        <img src="./00main/clock_re.png" alt=""  style="width: 13px;">
+                        내일 오전 10:00 부터 운영해요
+                    </div>
+                </div>
+            </div>
+            <div class="channeltalk common_css">
+                <img src="./00main/talk_re.png" alt="" style="width: 15px;">
+                채널톡 이용중
+            </div>
+    
+            <div class="inner_footer">
+                <div class="f_icon f_icon1">
+                    <div class="icon_box1"><img src="./00main/home_re.png" alt=""></div>
+                    <div class="icon_desc">홈</div>
+                </div>
+                <div class="f_icon f_icon2">
+                    <div class="icon_box2"><img src="./00main/chat_re.png" alt=""></div>
+                    <div class="icon_desc">대화</div>
+                </div>
+                <div class="f_icon f_icon3">
+                    <div class="icon_box3"><img src="./00main/setting_re.png" alt=""></div>
+                    <div class="icon_desc">설정</div>
+                </div>
+            </div>
+        </div>
+        <div class="top_btn" id="top_btn">TOP</div>
+<!-- 문의창 끝 -->
+    </div>
+    <!-- 본문끝 -->  
+
+    <script src="./js/commonjs.js"></script>
+    <script src="./js/detailpage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 0, 
+            loop: true, 
+            autoplay: {
+                delay: 2000
+            }, speed: 1000
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Fleece - Modest Mood</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/commoncss.css">
+    <link rel="stylesheet" href="./css/listpagecss.css">
+    <link rel="shortcut icon" href="./00main/faviconlogo.jpg" type="image/x-icon">
+    <script src="./js/itemListData.js"></script>
+    <script src="./js/get_url_info.js"></script>
+</head>
+<body>
+    <div class="top_banner swiper mySwiper" id="top_banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Modest Mood 25 Spring Collection 3.18(Tue) 12pm Open</div>
+            <div class="swiper-slide">Contact the site : modestmood2016@gmail.com</div>
+        </div>
+        <input type="button" value="X" id="close_btn" class="close_btn">
+    </div>
+    <div id="wrap">
+        <header class="header contain" id="header">
+            <!-- 상단헤더 -->
+            <!-- 모바일헤더 시작 -->
+            <div class="menu_pan">
+                <div class="menu_header"> 
+                    <ul class="header_ul">
+                        <li class="header_li"><a href="#"><img src="./00main/account.png" alt=""></a></li>
+                        <li class="header_li">
+                                <img src="./00main/globe.png" alt="" class="global_btn">
+                                <div class="menu_box">
+                                    <ul class="m_menu_inner_ul">
+                                        <li class="lang" onclick="plus(this)">
+                                            <div class="dot black"></div>
+                                            <!-- Kor -->
+                                            <a href="#">Kor</a>
+                                        </li>
+                                        <li class="lang" onclick="plus(this)">
+                                            <div class="dot"></div>
+                                            <!-- Eng -->
+                                            <a href="#">Eng</a>
+                                        </li>
+                                        <li class="lang" onclick="plus(this)">
+                                            <div class="dot"></div>
+                                            <!-- Jpn -->
+                                            <a href="#">Jpn</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <li class="header_li"><a href="#"><img src="./00main/heart.png" alt="" style="width: 25px;"></a></li>
+                    </ul>
+                </div>
+                <div class="pan_line"></div>
+                <div class="menu_body">
+                <ul class="ul_top">
+                    <li><a href="#">New Arrivals</a></li>
+                </ul>
+                <ul class="mobile_inner_ul">
+                    <li><a href="./listpage.html?category=0">West fleece</a></li>
+                    <li><a href="./listpage.html?category=1">Outer</a></li>
+                    <li><a href="./listpage.html?category=2">Top</a></li>
+                    <li><a href="./listpage.html?category=3">Knitwear</a></li>
+                    <li><a href="./listpage.html?category=4">Denim</a></li>
+                    <li><a href="./listpage.html?category=5">Bottom</a></li>
+                    <li><a href="./listpage.html?category=6">Dress</a></li>
+                    <li><a href="./listpage.html?category=7">Bag</a></li>
+                    <li><a href="./listpage.html?category=8">Shoes</a></li>
+                    <li><a href="./listpage.html?category=9">Things</a></li>
+                    <li class="inner_li"><a href="#">Personal</a></li>
+                </ul>
+                <ul class="ul_bot">
+                    <li><a href="#">Collection</a></li>
+                    <li><a href="#">Journal</a></li>
+                    <li><a href="#">Notice</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="layer"></div>
+        <!-- 모바일헤더끝 -->
+            <div class="header_top contentbox">
+                <div class="mobie_menu">
+                    <img src="./00main/mobile_menu.png" alt="메뉴버튼" class="mobile_menu_btn">
+                </div>
+                <div class="left_box">
+                    <ul class="t_menu">
+                        <li class="t_menu_li">
+                                <img src="./00main/account.png" alt="account">
+                                <div class="menu_box">
+                                    <ul class="t_menu_inner_ul">
+                                        <li><a href="#">Login</a></li>
+                                        <li><a href="#">Register</a></li>
+                                        <li><a href="#">My Page</a></li>
+                                        <li class="notice"><a href="#">Notice</a></li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <li class="t_menu_li"><a href="#">New</a></li>
+                        <li class="t_menu_li">
+                                Shop
+                                <div class="menu_box">
+                                    <ul class="t_menu_inner_ul">
+                                        <li><a href="./listpage.html?category=0">West fleece</a></li>
+                                        <li><a href="./listpage.html?category=1">Outer</a></li>
+                                        <li><a href="./listpage.html?category=2">Top</a></li>
+                                        <li><a href="./listpage.html?category=3">Knitwear</a></li>
+                                        <li><a href="./listpage.html?category=4">Denim</a></li>
+                                        <li><a href="./listpage.html?category=5">Bottom</a></li>
+                                        <li><a href="./listpage.html?category=6">Dress</a></li>
+                                        <li><a href="./listpage.html?category=7">Bag</a></li>
+                                        <li><a href="./listpage.html?category=8">Shoes</a></li>
+                                        <li><a href="./listpage.html?category=9">Things</a></li>
+                                        <li class="inner_li"><a href="#">Personal</a></li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <li class="t_menu_li">
+                                Global
+                                <div class="menu_box">
+                                    <ul class="t_menu_inner_ul">
+                                        <li class="lang" onclick="plus(this)">
+                                            <div class="dot black"></div>
+                                            <a href="#">Kor</a>
+                                        </li>
+                                        <li class="lang" onclick="plus(this)">
+                                            <div class="dot"></div>
+                                            <a href="#">Eng</a>
+                                        </li>
+                                        <li class="lang" onclick="plus(this)">
+                                            <div class="dot"></div>
+                                            <a href="#">Jpn</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </li>
+                        <li class="t_menu_li">
+                            <a href="#">Collection</a>
+                        </li>
+                        <li class="t_menu_li">
+                                Journal
+                                <div class="menu_box">
+                                    <ul class="t_menu_inner_ul">
+                                        <li><a href="#">Modestmood</a></li>
+                                        <li><a href="#">Shop modestmood</a></li>
+                                    </ul>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="logo_box">
+                    <a href="./index.html">
+                        <img src="./00main/logo.png" alt="로고">
+                    </a>
+                </div>
+                <div class="search_box">
+                    <ul class="search_menu">
+                        <li>
+                            <img src="./00main/search.png" alt="search" id="search_icon">
+                        </li>
+                        <li>
+                            <img src="./00main/cart.png" alt="">
+                            <span class="cart_num">0</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 돋보기 누르면 나타나는 서치박스 -->
+            <div class="header_bot">
+                <div class="search">
+                    <input type="text" placeholder="search" class="keyword">
+                    <div class="icon_box">
+                        <img src="./00main/magni.png" alt="search_icon">
+                    </div>
+                </div>
+                <div class="close_btn2" id="close_btn2">
+                    <img src="./00main/icon-close원본.svg" alt="closebtn" style="width: 25px;" >
+                </div>
+            </div>
+        </header> 
+
+<!-- 헤더끝 -->
+
+        <main class="main contain">
+            <div class="contentbox">
+                <section class="sec1">
+                    <div class="category_title">
+                        West Fleece
+                    </div>
+                    <div class="item_list">
+                        <ul class="list_ul" id="list_ul">
+                            <!-- 여기 아이템 리스트 영역 -->
+                        </ul>
+                    </div>
+            </section>
+            <section class="sec2">
+                <a href="#">PREV</a>
+                <a href="#">1</a>
+                <a href="#">NEXT</a>
+            </section>
+            </div>
+        </main>
+        
+<!-- 메인끝 -->
+        <footer class="footer">
+            <div class="sns_info">
+                <a href="https://www.instagram.com/modest_mood/">Instagram</a>
+            </div>
+            <div class="shop_info">
+                <span>Company: MODEST MOOD . Ceo Cpo : HAN JU RI . Address : 036987 서울 서대문구 증가로 26-1 3층 . Tel : 070-8855-2003 . E-mail : modestmood25@gmail.com . Business license : 407-37-00245 . Online business license : 제 2018-서울마포-0333 호</span>
+                <br>
+                <ul>
+                    <li><a href="https://modestmood.com/member/agreement.html">Agreement</a></li>
+                    <li><a href="https://modestmood.com/shopinfo/guide.html">Guide</a></li>
+                    <li><a href="https://modestmood.com/member/privacy.html">Privacy</a></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- 문의버튼 -->
+        <div class="inquiry_btn" id="inquiry_btn">
+            <img src="./00main/1대1원본.png" alt="1:1문의" style="width: 65px;">
+        </div>
+        <div class="x_btn">
+            <img src="./00main/close.png" alt="" style="filter: grayscale(100%);">
+        </div>
+        <!-- 문의창 -->
+        <div class="inquiry_box" id="inquiry_box">
+
+            <div class="inner_header">
+                <div class="inner_logo">
+                    <img src="./00main/main_logo.jpg" alt="">
+                </div>
+                <div class="inner_desc">
+                    <h2>MODEST MOOD</h2>
+                    <div class="inner_desc_time">
+                        <span class="inner_desc_span">운영시간 보기</span>
+                        <div class="right_arrow">
+                            <img src="./00main/right-arrow_re.png" alt="" style="width: 10px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="inner_body">
+                <div class="inner_top">
+                    <div class="profile">
+                        <img src="./00main/main_logo.jpg" alt="" style="width: 36px;">
+                    </div>
+                    <div class="txt_box">
+                        <div class="head">
+                            MODEST MOOD
+                        </div>
+                        <div class="introduction">
+                            <p>모데스트무드는</p>
+                            <p>수수한 , 보통의 의미를 뜻합니다.</p>
+                            작고 소박한 것일지라도 사랑 할 줄 아는 우리가 되기를 바라는 마음을 담았습니다. 이 공간에서 근사한 하루를 보내시길 바라며 언제나 MODEST MOOD 를 찾아주셔서 감사합니다💙 
+                        </div>
+                    </div>
+                </div>
+                <div class="inner_bot">
+                    <div class="send_btn common_css">
+                        문의하기
+                        <img src="./00main/send_re.png" alt="">
+                    </div>
+                    <div class="time common_css">
+                        <img src="./00main/clock_re.png" alt=""  style="width: 13px;">
+                        내일 오전 10:00 부터 운영해요
+                    </div>
+                </div>
+            </div>
+            <div class="channeltalk common_css">
+                <img src="./00main/talk_re.png" alt="" style="width: 15px;">
+                채널톡 이용중
+            </div>
+    
+            <div class="inner_footer">
+                <div class="f_icon f_icon1">
+                    <div class="icon_box1"><img src="./00main/home_re.png" alt=""></div>
+                    <div class="icon_desc">홈</div>
+                </div>
+                <div class="f_icon f_icon2">
+                    <div class="icon_box2"><img src="./00main/chat_re.png" alt=""></div>
+                    <div class="icon_desc">대화</div>
+                </div>
+                <div class="f_icon f_icon3">
+                    <div class="icon_box3"><img src="./00main/setting_re.png" alt=""></div>
+                    <div class="icon_desc">설정</div>
+                </div>
+            </div>
+        </div>
+        <div class="top_btn" id="top_btn">TOP</div>
+</div>
+
+
+
+    <script src="./js/commonjs.js"></script>
+    <script src="./js/listpagejs.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 0, 
+            loop: true, 
+            autoplay: {
+                delay: 2000
+            }, speed: 1000
+        });
+    </script>
+</body>
+</html>
