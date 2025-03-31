@@ -164,10 +164,8 @@ header {
     gap: 16px;
     cursor: pointer;
 }
-/* .gobal_btn:hover {
-    opacity: 1;
-    transform: translate(-50%, 10px);
-} */
+
+.global_btn { cursor: pointer; } 
 .t_menu_li {
     font-size: 18px;
     font-weight: 600;
